@@ -1,0 +1,3 @@
+[info]: Logger1: id = 140403548353776
+[debug]: Logger2 id = 140403548353776
+[warn]: assert: True
