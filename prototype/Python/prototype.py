@@ -7,14 +7,15 @@ from copy import deepcopy
 
 
 class Cloner(ABC):
-	"""Prototype creational design pattern."""
+    """Prototype creational design pattern."""
 
-	@abstractmethod
-	def clone(self):
-		raise NotImplemented
+    @abstractmethod
+    def clone(self):
+        raise NotImplementedError
+
 
 class VirusCloner(Cloner):
-	"""A concrete cloner associated with a (Virus) client."""
+    """A concrete cloner associated with a (Virus) client."""
 
-	def clone(self):
-		return deepcopy(self)
+    def clone(self):
+        return deepcopy(self)
