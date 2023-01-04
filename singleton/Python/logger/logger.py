@@ -1,18 +1,22 @@
-from singleton import Singleton
+#!/usr/bin/env python3
+
+# 1. cd here
+# 2. run `python3 logger.py`
+
 from os import PathLike
 from sys import path
 from typing import Union
 
-PathType = Union[str, bytes, PathLike]
-
 path.insert(0, "..")
+
+from singleton import Singleton
 
 
 @Singleton
 class Logger:
     """Logger class."""
 
-    def __init__(self, out: PathType):
+    def __init__(self, out: Union[str, bytes, PathLike]):
         self.out = out
 
     def log(self, level: str, msg: str):
