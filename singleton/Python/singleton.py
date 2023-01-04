@@ -1,7 +1,13 @@
-# Inspired by "Practical Python Design Patterns", Wessel Badenhorst
-# https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html
-# https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python
-# https://github.com/Kemaweyan/singleton_decorator
+#!/usr/bin/env python3
+"""
+Inspired by "Practical Python Design Patterns", Wessel Badenhorst.
+
+References
+----------
+* https://python-3-patterns-idioms-test.readthedocs.io/en/latest/Singleton.html
+* https://stackoverflow.com/questions/6760685/creating-a-singleton-in-python
+* https://github.com/Kemaweyan/singleton_decorator
+"""
 
 
 class Singleton:
