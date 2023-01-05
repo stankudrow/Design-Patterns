@@ -1,5 +1,11 @@
-# Inspired by "Practical Python Design Patterns", Wessel Badenhorst
-# https://radek.io/2011/08/03/design-pattern-prototype/
+#!/usr/bin/env python3
+"""
+Inspired by "Practical Python Design Patterns", Wessel Badenhorst.
+
+References
+----------
+* https://radek.io/2011/08/03/design-pattern-prototype/
+"""
 
 
 from abc import ABC, abstractmethod

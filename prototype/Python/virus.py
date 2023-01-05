@@ -1,4 +1,12 @@
+#!/usr/bin/env python3
+
+
+# 1. cd here
+# 2. run `python3 virus.py`
+
+
 from time import time
+
 from prototype import VirusCloner
 
 
