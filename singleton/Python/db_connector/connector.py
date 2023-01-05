@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # 1. cd here
-# 2. run `python3 logger.py`
+# 2. run `python3 connector.py`
 
 import sqlite3
 from sys import path
