@@ -10,6 +10,7 @@ path.insert(0, "..")
 
 from singleton import Singleton
 
+
 @Singleton
 class SQLDataBase:
     """SQLite database [file] class."""
