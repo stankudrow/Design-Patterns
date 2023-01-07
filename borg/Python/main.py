@@ -1,8 +1,11 @@
+#!/usr/bin/env python3
+
+
 from borg import Borg
 
 
 class Singleborg(Borg):
-    """Singleton based on Borg/Monostate pattern."""
+    """A "Singleton" based on Borg/Monostate pattern."""
 
     def __init__(self, **kwargs):
         super().__init__()
