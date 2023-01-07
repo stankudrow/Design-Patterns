@@ -54,7 +54,9 @@ class FoodFactory:
         elif fname == "egg":
             return Egg("fly")
         else:
-            raise FoodFactoryError(f"cannot create {food_name} class.")
+            raise FoodFactoryError(
+                f"cannot create {food_name} class."
+            )
 
 
 if __name__ == "__main__":

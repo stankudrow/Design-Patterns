@@ -27,6 +27,8 @@ if __name__ == "__main__":
     dbc1 = SQLDataBase("tutorial.db")
     dbc2 = SQLDataBase("tutorial.db")
     assert id(dbc1) == id(dbc2)
-    dbc1.execute("CREATE TABLE IF NOT EXISTS movie(title, year, score)")
+    dbc1.execute(
+        "CREATE TABLE IF NOT EXISTS movie(title, year, score)"
+    )
     res = dbc2.execute("SELECT name FROM sqlite_master")
     print(f"DB name -> {res.fetchone()}")

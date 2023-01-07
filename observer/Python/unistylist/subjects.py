@@ -35,9 +35,9 @@ class FontStylist(Subject):
         super().__init__()
         print("A ConcreteSubject: FontStylist.")
         self._style = {
-            'colour': 'black',
-            'size': '14pt',
-            'font': 'Times New Roman'
+            "colour": "black",
+            "size": "14pt",
+            "font": "Times New Roman",
         }
 
     @property

@@ -12,8 +12,8 @@ from subjects import FontStylist
 
 if __name__ == "__main__":
     stylist = FontStylist()  # greetings from a concrete one
-    par1 = Paragraph('P1')
-    par2 = Paragraph('P2')
+    par1 = Paragraph("P1")
+    par2 = Paragraph("P2")
     # registration
     stylist.register(par2)
     print(f"{par2.name} has been registered as an observer.")
@@ -21,9 +21,9 @@ if __name__ == "__main__":
     for par in par1, par2:
         print(par)
     stylist.style = {
-        'colour': 'green',
-        'size': '16pt',
-        'font': 'Comic Sans',
+        "colour": "green",
+        "size": "16pt",
+        "font": "Comic Sans",
     }
     print("I have unified them all!")
     # after
