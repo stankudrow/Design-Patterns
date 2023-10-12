@@ -2,18 +2,15 @@
 """
 Observer is a behavioural pattern.
 
-Observers/Subscribers are objects
-that are notified by a Subject/Publisher.
-
-An object "willing" to be updated from a subject,
-enlists into the ranks of subscribers.
-
-A subject will notify all its observers.
-Un- or subscribing is done at runtime.
+Observers are subscribers, a Subject is a publisher.
+A subject can register observers.
+All enlisted observers are updated uniformly.
 """
 
 
 from abc import ABC, abstractmethod
+
+from common import SettingsType
 
 
 class Observer(ABC):
@@ -28,13 +25,12 @@ class Paragraph(Observer):
     """A paragraph as a concrete observer."""
 
     def __init__(self, name: str):
-        super().__init__()
         self.name = name
-        self.style = {}  # just for simplicity
+        self.style: SettingsType = {}
 
     def __repr__(self) -> str:
-        return f"Paragraph {self.name}: {self.style}"
+        return f"Paragraph -> {self.name}: {self.style}"
 
     def update(self, font_subject):
         self.style = font_subject.style
-        print(f"Paragraph {self.name} has been notified")
+        print(f"Paragraph -> {self.name} has been notified")

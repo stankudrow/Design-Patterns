@@ -2,7 +2,11 @@
 """
 A demonstration of subjects/observers.
 
-Inspiration from the book "Software Design Patterns" by Sufyan bin Uzayr.
+Inspiration from:
+
+- the book "Software Design Patterns" by Sufyan bin Uzayr;
+- the book "Design Patterns" by
+- https://www.geeksforgeeks.org/observer-method-python-design-patterns/
 """
 
 
@@ -11,12 +15,14 @@ from subjects import FontStylist
 
 
 if __name__ == "__main__":
-    stylist = FontStylist()  # greetings from a concrete one
+    stylist = FontStylist()
+
     par1 = Paragraph("P1")
     par2 = Paragraph("P2")
-    # registration
+
     stylist.register(par2)
     print(f"{par2.name} has been registered as an observer.")
+
     # before
     for par in par1, par2:
         print(par)
@@ -26,6 +32,7 @@ if __name__ == "__main__":
         "font": "Comic Sans",
     }
     print("I have unified them all!")
+
     # after
     for par in par1, par2:
         print(par)
