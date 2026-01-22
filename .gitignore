@@ -72,11 +72,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
 # Ruff stuff:
 .ruff_cache/
 
